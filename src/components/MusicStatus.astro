@@ -1,0 +1,31 @@
+<div class="text-left border-violet-100 border-2 bg-opacity-30 p-4 rounded-lg h-32 flex gap-2">
+  <img id="music-image" src="https://lastfm.freetls.fastly.net/i/u/174s/08a487ae19df073f1ec2050a6b3b9da6.jpg" class="rounded-lg" width=92 height=92>
+  <div class="overflow-hidden flex flex-col">
+    <p id="music-status" class="text-sm">Currently listening to:</p>
+    <p id="music-title" class="text-lg overflow-auto">i scream this in the mirror before i interact with anyone</p>
+    <p id="music-artist" class="text-sm text-gray-300"><em>JPEGMAFIA</em></p>
+  </div>
+  <script is:inline>
+
+  const image = document.getElementById('music-image');
+  const status = document.getElementById('music-status');
+  const title = document.getElementById('music-title');
+  const artist = document.getElementById('music-artist');
+
+  function updateMusic() {
+    fetch('https://circulars.dev/lastfm')
+      .then(response => response.json())
+      .then(data => {
+        if (data.recenttracks.track[0]['@attr'] && data.recenttracks.track[0]['@attr'].nowplaying) {
+          status.innerText = 'Currently listening to:';
+        } else {
+          status.innerText = 'Last listened to:';
+        }
+      });
+  }
+
+  updateMusic()
+
+  </script>
+</div>
+

@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import MusicStatus from '../components/MusicStatus.astro';
 ---
 
 <Layout title="circular :3">
@@ -14,14 +14,7 @@ import Card from '../components/Card.astro';
       <p>studying at online uni</p>
       <p>swift student challenge 2024 winner</p>
     </div>
-    <div class="text-left border-violet-100 border-2 bg-opacity-30 p-4 rounded-md h-32 flex gap-2">
-      <img src="https://lastfm.freetls.fastly.net/i/u/174s/de0fbf0601a554a6e1c61226c22f7909.jpg" class="rounded-full">
-      <div class="overflow-hidden">
-        <p class="text-sm">Currently listening to:</p>
-        <p class="text-lg">i scream this in the mirror before i interact with anyone</p>
-        <p class="text-sm text-gray-300"><em>JPEGMAFIA</em></p>
-      </div>
-    </div>
+    <MusicStatus />
 	</main>
 </Layout>
 
