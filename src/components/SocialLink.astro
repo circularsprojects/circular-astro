@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  link: string;
+  icon_class: string;
+  hover_color: string;
+}
+
+const { title, link, icon_class, hover_color } = Astro.props;
+---
+
+<a href={link} class={`w-fit transition duration-150 ${hover_color}`}>
+  <span class={"nf " + icon_class}></span>
+  <span class="">{title}</span>
+</a>
