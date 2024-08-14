@@ -2,12 +2,13 @@
 interface Props {
   title: string;
   link: string;
+  icon_class: string;
 }
 
-const { title, link } = Astro.props;
+const { title, link, icon_class } = Astro.props;
 ---
 
 <a href={link} class="w-fit transition duration-150 hover:translate-x-2">
-  <span class="nf nf-md-key"></span>
-  <span class="">{title}</span>
+  <span class={"align-middle text-2xl nf " + icon_class}></span>
+  <span class="align-middle">{title}</span>
 </a>

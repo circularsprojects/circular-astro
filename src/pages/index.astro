@@ -72,10 +72,23 @@ import ProjectLink from '../components/ProjectLink.astro';
     </div>
     <div>
       <h1 class="text-3xl font-bold">Projects</h1>
-      <ProjectLink
-          title="watchcord"
-          link="https://watchcord.dev"
-          />
+      <div class="mt-2 flex flex-col">
+        <ProjectLink
+            title="Watchcord"
+            link="https://watchcord.dev"
+            icon_class="nf-md-watch_variant"
+            />
+        <ProjectLink
+            title="detnsw-autologin"
+            link=""
+            icon_class="nf-fa-key"
+            />
+        <ProjectLink
+            title="food-bot"
+            link=""
+            icon_class="nf-md-robot"
+            />
+      </div>
     </div>
 	</main>
 </Layout>
