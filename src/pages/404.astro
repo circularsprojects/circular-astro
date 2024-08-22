@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets'
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="circular :3">
+  <main class="p-8 w-full lg:w-1/2 text-left self-center text-ctp-text flex flex-col gap-4">
+    <h1 class="text-5xl font-bold my-4 self-center">404</h1>
+    <p class="self-center">that page doesn't exist!</p>
+    <p class="self-center"><a href="/" class="text-ctp-sky font-bold">return home</a></p>
+    <Footer />
+  </main>
+</Layout>
