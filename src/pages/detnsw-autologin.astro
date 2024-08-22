@@ -2,19 +2,17 @@
 import { Image } from 'astro:assets'
 
 import Layout from '../layouts/Layout.astro';
-import MusicStatus from '../components/MusicStatus.astro';
-import SocialLink from '../components/SocialLink.astro';
-import ProjectLink from '../components/ProjectLink.astro';
-import Widgets from '../components/88x31s.astro';
-import Webrings from '../components/Webrings.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="circular :3">
-  <main class="p-8 w-full lg:w-1/2 text-left self-center text-ctp-text flex flex-col gap-8">
-    <div class="w-full">
-      <div class="my-4">
-        <h1 class="text-5xl font-bold"><span class="text-ctp-overlay0">circular/</span>detnsw-autologin</h1>
-      </div>
-    </div>
+  <main class="p-8 w-full lg:w-1/2 text-left self-center text-ctp-text flex flex-col gap-4">
+    <h1 class="text-4xl font-bold my-4"><a class="text-ctp-overlay0" href="/">circular/</a>detnsw-autologin</h1>
+    <p>detnsw-autologin is a funny little app i made to automatically log into my school internet</p>
+    <p>i've only tested it with my own school's internet, but it should work for any public school in NSW</p>
+    <Image src="/detnswimage.png" alt="detnsw-autologin screenshot" width=756 height=618 class="self-center w-96" />
+    <p>the app has a windows and macos version available, which you can download <a href="/downloads/detnsw-autologin-v1.2.exe" class="text-ctp-sky">here (windows)</a> and <a href="/downloads/detnsw-autologin-macos-v1.1r3.zip" class="text-ctp-sky">here (macos)</a></p>
+    <p>its also open source!!! you can find the source code <a href="https://github.com/circularsprojects/detnsw-autologin" class="text-ctp-sky">here (windows)</a> and <a href="https://github.com/circularsprojects/detnsw-autologin-macos" class="text-ctp-sky">here (macos)</a></p>
+    <Footer />
   </main>
 </Layout>

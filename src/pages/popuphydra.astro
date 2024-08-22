@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets'
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="circular :3">
+  <main class="p-8 w-full lg:w-1/2 text-left self-center text-ctp-text flex flex-col gap-4">
+    <h1 class="text-4xl font-bold my-4"><a class="text-ctp-overlay0" href="/">circular/</a>popuphydra</h1>
+    <p>a really stupid app i made for fun</p>
+    <p>the idea is very simple: one window opens, and if you click it the window closes and two more open</p>
+    <p>you can also adjust how many windows open after each press</p>
+    <p>there IS also a quit button. im a villain not a monster</p>
+    <Image src="/popuphydra-wine.png" alt="screenshot of popuphydra" width=840 height=525 class="w-96 self-center" />
+    <p>you can download it <a href="/downloads/popuphydra.exe" class="text-ctp-sky">here</a></p>
+    <p>also dont question why im running it on wine, i was too lazy to get a windows ss</p>
+    <Footer />
+  </main>
+</Layout>

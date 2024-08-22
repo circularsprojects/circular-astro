@@ -7,6 +7,7 @@ import SocialLink from '../components/SocialLink.astro';
 import ProjectLink from '../components/ProjectLink.astro';
 import Widgets from '../components/88x31s.astro';
 import Webrings from '../components/Webrings.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="circular :3">
@@ -94,12 +95,12 @@ import Webrings from '../components/Webrings.astro';
             />
         <ProjectLink
             title="food-bot"
-            link=""
+            link="food-bot"
             icon_class="nf-md-discord"
             />
         <ProjectLink
             title="Popup Hydra"
-            link=""
+            link="popuphydra"
             icon_class="nf-cod-multiple_windows"
             />
       </div>
@@ -109,16 +110,7 @@ import Webrings from '../components/Webrings.astro';
       <iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
     </div>
     <Webrings />
-    <footer class="text-center text-ctp-surface1 text-xs self-center flex flex-col items-center">
-      <p>my awesome website</p>
-      <p>made with astro and tailwindcss</p>
-      <p>completely <a href="https://github.com/circularsprojects/circular-astro" class="text-ctp-surface2 hover:text-base duration-150">open-source!</a></p>
-      <div class="flex h-[32px]">
-        <img src="neco cheer.gif" alt="neco cheer" width=32 height=32 loading=lazy>
-        <img src="neco smoove.gif" alt="neco smoove" width=32 height=32 loading=lazy>
-        <img src="neco spin.gif" alt="neco spin" width=32 height=32 loading=lazy>
-      </div>
-    </footer>
+    <Footer />  
 	</main>
 </Layout>
 
