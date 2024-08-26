@@ -66,8 +66,7 @@ jobs:
         with:
           server: ${{secrets.server}}
           username: ${{secrets.username}}
-          key: ${{secrets.key}}
-          passphrase: ${{secrets.passphrase}}
+          password: ${{secrets.password}}
           port: 22
           uploads: |
-            ${{env.BUILD_PATH}}/dist/ => /var/www/html/circulars.dev/
+            ${{env.BUILD_PATH}}/dist/ => /var/www/circulars.dev/
