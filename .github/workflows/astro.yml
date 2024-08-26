@@ -70,3 +70,4 @@ jobs:
           port: 22
           uploads: |
             ${{env.BUILD_PATH}}/dist/ => /var/www/circulars.dev/
+          delete: true
