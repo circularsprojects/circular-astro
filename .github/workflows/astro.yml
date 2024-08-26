@@ -65,7 +65,7 @@ jobs:
         uses: Dylan700/sftp-upload-action@latest
         with:
           server: ${{secrets.server}}
-          username: ${{secrets.username}}
+          username: astro
           password: ${{secrets.password}}
           port: 22
           uploads: |
