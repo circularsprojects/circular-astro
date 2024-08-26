@@ -27,7 +27,11 @@ import { Image } from 'astro:assets';
         title.innerText = data.recenttracks.track[0].name;
         title.href = data.recenttracks.track[0].url;
         artist.innerText = data.recenttracks.track[0].artist['#text'];
-        image.src = data.recenttracks.track[0].image[2]['#text'];
+        if (data.recenttracks.track[0].image[2]['#text'] === '') {
+          image.src = '/circular-cat-200-bg.gif';
+        } else {
+          image.src = data.recenttracks.track[0].image[2]['#text'];
+        }
         image.alt = data.recenttracks.track[0].album['#text'];
       });
   }

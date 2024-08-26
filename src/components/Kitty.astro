@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 ---
 
 <div class="fixed right-0 bottom-0 cursor-pointer">
-  <Image src="/circular-cat.gif" alt="a cat gif" width=180 height=180 onclick="meow()" />
+  <Image src="/circular-cat.gif" alt="a cat gif" width=180 height=180 onclick="meow()" loading=eager />
   <script is:inline>
     let meowsound = new Audio('meow.mp3');
     function meow() {

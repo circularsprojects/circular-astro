@@ -1,6 +1,7 @@
 #explanation of most of the stuff in here
 ##among_us_macos.zip
-i made it as my first macos application since my first macbook a couple years ago, and i wanted to test my coding ability on macos.
+i made it as my first macos application since my first macbook a couple years ago, and i wanted to test my coding ability on macos.\
+its so bad please dont download
 ##binaryviewer.zip
 made as a small project for a tech class, this app takes checkbox inputs (the binary) and converts it to numbers and ASCII.
 ##detnsw-autologin-*.zip

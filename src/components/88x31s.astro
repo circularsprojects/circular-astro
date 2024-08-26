@@ -1,3 +1,7 @@
+---
+import { Image } from 'astro:assets';
+---
+
 <div>
   <h1 class="text-3xl font-bold">buttons!!</h1>
   <div style="image-rendering: pixelated;" class="my-4">
@@ -5,10 +9,10 @@
     <img src="circular-88x31.gif" class="" alt="my button :3" loading=lazy>
   </div>
   <ul style="image-rendering: pixelated;" class="flex flex-wrap gap-2 [&>*:hover]:scale-110 [&>*:hover]:rotate-3 odd:[&>*:hover]:-rotate-3 [&>*]:duration-150">
-    <a href="https://necoarc.dev"><img src="https://necoarc.dev/assets/necoarc-88x31.png" alt="necoarc.dev" title="ENTER THE DOMAIN OF THE PROFANED ONE" loading=lazy></a>
-    <a href="https://silly.city"><img src="https://silly.city/silly.gif" alt="silly.city" width="88px" height="31px" title="the silly" loading=lazy></a>
-    <a href="https://bomberfish.ca"><img src="https://bomberfish.ca/buttons/button.gif" alt="BomberFish" title="BomberFish" loading=lazy></a> 
-    <a href="https://remblanc.nekoweb.org"><img src="https://remblanc.nekoweb.org/images/button.png" alt="remblanc" title="bucketring neighbor!!! :3" loading=lazy></a>
-    <a href="https://pyralspyte.nekoweb.org"><img src="https://i.postimg.cc/yNrnNC0n/pyralspyte.gif" alt="pyralspyte.nekoweb.org" loading=lazy></a>
+    <a href="https://necoarc.dev"><Image src="https://necoarc.dev/assets/necoarc-88x31.png" alt="necoarc.dev" title="ENTER THE DOMAIN OF THE PROFANED ONE" loading=lazy width=88 height=31 /></a>
+      <a href="https://silly.city"><Image src="https://silly.city/silly.gif" alt="silly.city" width="88px" height="31px" title="the silly" loading=lazy /></a>
+        <a href="https://bomberfish.ca"><Image src="https://bomberfish.ca/buttons/button.gif" alt="BomberFish" title="BomberFish" loading=lazy width=88 height=31 /></a> 
+          <a href="https://remblanc.nekoweb.org"><Image src="https://remblanc.nekoweb.org/images/button.png" alt="remblanc" title="bucketring neighbor!!! :3" loading=lazy width=88 height=31 /></a>
+            <a href="https://pyralspyte.nekoweb.org"><Image src="https://i.postimg.cc/yNrnNC0n/pyralspyte.gif" alt="pyralspyte.nekoweb.org" loading=lazy width=88 height=31 /></a>
   </ul>
 </div>
