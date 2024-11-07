@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MusicStatus from '../components/MusicStatus.astro';
-import SocialLink from '../components/SocialLink.astro';
-import ProjectLink from '../components/ProjectLink.astro';
+import Link from '../components/Link.astro';
 import Widgets from '../components/88x31s.astro';
 import Webrings from '../components/Webrings.astro';
 import Footer from '../components/Footer.astro';
@@ -24,49 +23,49 @@ import Kitty from '../components/Kitty.astro';
     <div>
       <h1 class="text-3xl font-bold">Socials</h1>
       <div class="mt-2 flex flex-col">
-        <SocialLink
+        <Link
             title="circular [AT] circulars.dev"
             link="javascript:alert('just replace the [at] with a @ duhhh i also have a public key you can use to encrypt messages, see my keyoxide')"
             icon_class="nf-md-email"
             hover_color="hover:text-ctp-red"
             />
-        <SocialLink
+        <Link
             title="Keyoxide"
             link="https://keyoxide.org/A7EBE918E1931F95AED878E15FD9E3482ABB74DE"
             icon_class="nf-fa-key"
             hover_color="hover:text-ctp-lavender"
             />
-        <SocialLink
+        <Link
             title="Discord"
             link="https://discord.com/users/305243321784336384"
             icon_class="nf-md-discord"
             hover_color="hover:text-ctp-blue"
             />
-        <SocialLink
+        <Link
             title="Github"
             link="https://github.com/circularsprojects"
             icon_class="nf-fa-github"
             hover_color="hover:text-ctp-text"
             />
-        <SocialLink
+        <Link
             title="Twitter"
             link="https://twitter.com/circlure2"
             icon_class="nf-fa-twitter"
             hover_color="hover:text-ctp-sapphire"
             />
-        <SocialLink
+        <Link
             title="Instagram"
             link="https://instagram.com/circularsprojects"
             icon_class="nf-fa-instagram"
             hover_color="hover:text-ctp-pink"
             />
-        <SocialLink
+        <Link
             title="Last.fm"
             link="https://www.last.fm/user/circular_"
             icon_class="nf-fa-lastfm"
             hover_color="hover:text-ctp-red"
             />
-        <SocialLink
+        <Link
             title="Mastodon"
             link="https://wetdry.world/@circular"
             icon_class="nf-fa-mastodon"
@@ -77,30 +76,35 @@ import Kitty from '../components/Kitty.astro';
     <div>
       <h1 class="text-3xl font-bold">Projects</h1>
       <div class="mt-2 flex flex-col">
-        <ProjectLink
+        <Link
             title="Watchcord"
             link="https://watchcord.dev"
             icon_class="nf-md-watch_variant"
+            hover_color="hover:text-ctp-mauve"
             />
-        <ProjectLink
+        <Link
             title="i love neco arc"
             link="https://necoarc.dev"
             icon_class="nf-fa-cat"
+            hover_color="hover:text-ctp-pink"
             />
-        <ProjectLink
+        <Link
             title="detnsw-autologin"
             link="detnsw-autologin"
             icon_class="nf-fa-key"
+            hover_color="hover:text-ctp-lavender"
             />
-        <ProjectLink
+        <Link
             title="food-bot"
             link="food-bot"
             icon_class="nf-md-discord"
+            hover_color="hover:text-ctp-blue"
             />
-        <ProjectLink
+        <Link
             title="Popup Hydra"
             link="popuphydra"
             icon_class="nf-cod-multiple_windows"
+            hover_color="hover:text-ctp-sapphire"
             />
       </div>
     </div>

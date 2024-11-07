@@ -9,7 +9,7 @@ interface Props {
 const { title, link, icon_class, hover_color } = Astro.props;
 ---
 
-<a href={link} class={`w-fit transition duration-150 hover:translate-x-2 ${hover_color}`}>
+<a href={link} class={`w-fit transition duration-150 hover:translate-x-2 hover:scale-125 origin-left ease-bounce hover:-skew-x-6 ${hover_color}`}>
   <span class={"align-middle mr-1 text-2xl nf " + icon_class}></span>
   <span class="align-middle">{title}</span>
 </a>
