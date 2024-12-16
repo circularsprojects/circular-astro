@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -33,7 +33,7 @@ const { title } = Astro.props;
     <meta property="twitter:image" content="https://circulars.dev/neco%20cheer.gif">
     <meta property="og:image" content="https://circulars.dev/neco%20cheer.gif">
 
-    <ViewTransitions />
+    <ClientRouter />
 	</head>
   <body class="flex flex-col bg-ctp-base overflow-y-scroll font-display">
     <noscript>Javascript is needed for some parts of this site to work, however it isn't required.</noscript>
