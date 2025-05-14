@@ -1,5 +1,7 @@
 # circulars.dev
 
+[![Deploy Astro site](https://github.com/circularsprojects/circular-astro/actions/workflows/astro.yml/badge.svg)](https://github.com/circularsprojects/circular-astro/actions/workflows/astro.yml)
+
 my personal website, made with [astro](https://astro.build/) and
 [tailwind](https://tailwindcss.com/).
 
