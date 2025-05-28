@@ -1,0 +1,23 @@
+---
+interface Props {
+    href: string;
+    src: string;
+    alt: string;
+    title?: string;
+}
+
+const { href, src, alt, title } = Astro.props;
+---
+
+<a href={href}>
+    <img
+        src={src}
+        alt={alt}
+        title={title ? title : alt}
+        width="88"
+        height="31"
+        loading="lazy"
+        style="image-rendering: pixelated;"
+        onerror="this.onerror=null;this.src='/no-image.png';"
+    />
+</a>
