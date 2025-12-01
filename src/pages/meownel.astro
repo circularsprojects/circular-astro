@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="meownel">
+  <main class="p-8 w-full lg:w-1/2 text-left self-center text-ctp-text flex flex-col gap-4">
+    <h1 class="text-4xl font-bold my-4"><a class="text-ctp-overlay0" href="/">circular/</a>meownel</h1>
+    <p>meownel is an in-development opinionated minecraft-focused server panel i'm making</p>
+    <p>i'm making the panel as there are no good open-source minecraft control panels for self-hosters (in my opinion)</p>
+    <p>most existing panels are either feature-bare or designed for server resellers as opposed to self-hosters (cough cough pterodactyl)</p>
+    <p>meownel is currently in very heavy development, and is not currently in a production-ready state</p>
+    <p>meownel uses kubernetes as a backend (because it's easy to link multiple nodes together and docker swarm is dead)</p>
+    <p>the front-end was originally made with react and next.js, but i switched to svelte for easier state management.</p>
+    <p>you can view the source code and contribute <a href="https://github.com/circularsprojects/meownel" class="text-ctp-sky">here</a></p>
+    <Footer />
+  </main>
+</Layout>
