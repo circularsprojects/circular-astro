@@ -2,6 +2,11 @@
 
 [![Deploy Astro site](https://github.com/circularsprojects/circular-astro/actions/workflows/astro.yml/badge.svg)](https://github.com/circularsprojects/circular-astro/actions/workflows/astro.yml)
 
+> [!IMPORTANT]
+> this repo is no longer being updated!!
+> my new website repo is accessible at https://github.com/circularsprojects/circulars.dev
+> future website rewrites will also be done here
+
 my personal website, made with [astro](https://astro.build/) and
 [tailwind](https://tailwindcss.com/).
 
